@@ -1,0 +1,32 @@
+{
+  "name": "PokerServer",
+  "version": "0.1.0",
+  "description": "PokerServer is server of Online real player game",
+  "main": "server.js",
+  
+  "repository": "",
+  "keywords": [
+    "node.js",
+    "eclipse",
+    "nodeclipse",
+    "GameServer",
+    "Poker"
+  ],
+  "author":{ "name": "R14BS017",
+  			"email":"mirhamzahasan@gmail.com"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md"
+  ,
+  "dependencies": {
+    "express": "latest",
+    "socket.io": "0.9",
+    "mongoose": "latest",
+    "http-proxy":"latest"
+    
+  },
+  "engines": {
+    "node": "latest",
+    "npm":"latest"
+  }
+}
