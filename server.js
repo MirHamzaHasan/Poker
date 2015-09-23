@@ -57,7 +57,10 @@ else {
 
 
 //console.log("Server Is Running and Up at Port 8080");
-var io= socket.listen(server);
+var io= socket.listen(serverfunction () {  
+  io.set("transports", ["xhr-polling"]); 
+  io.set("polling duration", 10); 
+});
 
 
 // Trigger Tables to get ready to play
