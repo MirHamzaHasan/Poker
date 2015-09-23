@@ -33,7 +33,7 @@ var server;
 	    console.log("Request for:  " + request.url);
 	    response.writeHead(200);
 	    response.end("hello world\n");
-	  }).listen(port,'localhost');
+	  }).listen(port,process.env.IP);
 /*if (cluster.isMaster) {
 	  for (var i = 0; i < numCPUs; i++) {
 	    cluster.fork();
@@ -57,7 +57,7 @@ else {
 
 
 //console.log("Server Is Running and Up at Port 8080");
-var io= socket.listen(serverfunction () {  
+var io= socket.listen(server,function () {  
   io.set("transports", ["xhr-polling"]); 
   io.set("polling duration", 10); 
 });
