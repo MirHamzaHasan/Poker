@@ -27,12 +27,13 @@ var ClientSockets=[]
 
 var numCPUs = require("os").cpus().length;
 //console.log(numCPUs+" ");
+var port = process.env.PORT || 8080;
 var server;
  server=http.createServer(function(request, response) {
 	    console.log("Request for:  " + request.url);
 	    response.writeHead(200);
 	    response.end("hello world\n");
-	  }).listen(8080,'localhost');
+	  }).listen(port,'localhost');
 /*if (cluster.isMaster) {
 	  for (var i = 0; i < numCPUs; i++) {
 	    cluster.fork();
